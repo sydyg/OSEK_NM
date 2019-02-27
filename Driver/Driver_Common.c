@@ -39,7 +39,7 @@ extern NMNodeCfg_t NodeCfg;
 /*函数名：TX_CAN_Transmit
 *参数：NMPDU
 *返回值：成功 1
-*说明：平台自己的报文发送函数的实现
+*说明：调用平台相关的报文发送函数
 */
 NMTypeU8_t TX_CAN_Transmit(NMPDU_t* NMPDU)
 {
@@ -263,16 +263,18 @@ void Timer10()
 //平台相关的初始化
 void InitPlatform()
 {
-	/*1.STM32相关的初始化*/
 	/*缓冲区初始化*/
 	RecvFIFO.GetMsg = GetFromFIFO;
 	RecvFIFO.SetMsg = SetToFIFO;
 	RecvFIFO.ClearBuff = ClearFIFO;
 	RecvFIFO.ClearBuff();
+	/*1.STM32相关的初始化*/
+	#ifdef STM32F407
 	/*定时器初始化*/
 	Stm32Timer3Init();//10ms中断一次
 	/*CAN模块初始化*/
 	STM32_CAN1_Init();
+	#endif
 }
 
 
