@@ -7,7 +7,7 @@
 1.3 OsekNM_core实现了OsekNM 2.5.3协议的核心逻辑，OsekNM.c实现了对各个节点各状态的处理，OsekNMServer.c实现了OsekNM 2.5.3协议提供给应用程序的API。<br />
 
 # 2. 移植
-移植过程在IND4平台有专门的讲解，大家可以去看视频教程，https://www.ind4.net/#/HomePage/CourseDetail?navType=Curriculum&courseId=2652。
+移植过程在IND4平台有专门的讲解，大家可以去看视频教程，https://www.ind4.net/#/HomePage/CourseDetail?navType=Curriculum&courseId=2652
 
 # 3. 附注
 整个代码移植到我的开发板，并且验证通过。<br />
