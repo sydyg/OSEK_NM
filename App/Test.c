@@ -8,6 +8,10 @@
 #include "usart.h"
 #include "CAN.h"
 #include "delay.h"
+<<<<<<< HEAD
+=======
+#include "led.h"
+>>>>>>> b223e6d9d90ad0f6d082b671cff5374d07f338be
 #define PRINT
 int main()
 {
@@ -17,7 +21,11 @@ int main()
 	uart_init(115200);	//初始化串口波特率为115200
 	delay_init(168);    //初始化延时函数
   /*收到报文闪烁LED0*/
+<<<<<<< HEAD
 	//InitLed0();
+=======
+	InitLed0();
+>>>>>>> b223e6d9d90ad0f6d082b671cff5374d07f338be
 	#ifdef PRINT
 	printf("at main\n");
 	#endif

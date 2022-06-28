@@ -869,10 +869,18 @@ ARM Macro Assembler    Page 14
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=.\objects\startup_stm32f40_41xxx.d -o.\objects\startup_stm32f40
+<<<<<<< HEAD
 _41xxx.o -I.\RTE\_OSEKNM -ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\
 Include -ID:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_VERSION SETA 525"
  --predefine="STM32F40_41xxx SETA 1" --list=.\listings\startup_stm32f40_41xxx.l
 st ..\..\Driver\stm32f407\CORE\startup_stm32f40_41xxx.s
+=======
+_41xxx.o -I.\RTE\_OSEKNM -ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\
+CMSIS\Device\ST\STM32F4xx\Include -ID:\Keil5\ARM\CMSIS\Include --predefine="__E
+VAL SETA 1" --predefine="__UVISION_VERSION SETA 525" --predefine="STM32F407xx S
+ETA 1" --list=.\listings\startup_stm32f40_41xxx.lst ..\..\Driver\stm32f407\CORE
+\startup_stm32f40_41xxx.s
+>>>>>>> b223e6d9d90ad0f6d082b671cff5374d07f338be
 
 
 
@@ -1985,4 +1993,8 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
+<<<<<<< HEAD
 448 symbols in table
+=======
+449 symbols in table
+>>>>>>> b223e6d9d90ad0f6d082b671cff5374d07f338be
