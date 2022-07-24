@@ -133,7 +133,7 @@ char GetFromFIFO(NMPDU_t* msg)
 	msg->MsgCtl = RecvFIFO.MSGs[RecvFIFO.Head% FIFOMAX].MsgCtl;
 	msg->MsgID = RecvFIFO.MSGs[RecvFIFO.Head% FIFOMAX].MsgID;
 	//数据域直接复制
-	for (; i < OSEKNM_DLC; i++)
+	for (; i < 6; i++)
 	{
 		msg->MsgData[i] = RecvFIFO.MSGs[RecvFIFO.Head% FIFOMAX].MsgData[i];
 	}
