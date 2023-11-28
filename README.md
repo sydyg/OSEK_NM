@@ -13,7 +13,7 @@
 整个代码移植到我的开发板，并且验证通过。<br />
 专门在Vspy平台实现了虚拟的网络管理节点。<br />
 如果在移植过程遇到问题，可以付费获得移植指导。<br />
-![Uploading 无标题.png…]()
+![无标题](https://github.com/sydyg/OSEK_NM/assets/24352068/c4e07dd3-8d54-403a-a609-8dd2ceefdc35)
 
 微信：sydygys  <br />
 
